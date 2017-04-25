@@ -1,0 +1,11 @@
+{
+	"botname": "AfbeeldingsOberBot",
+	"bottoken": "361647604:AAGi91QyOdcL2Zot_BUN_84wWMuA8-ZDdYk",
+	"users": {
+		"Flippylosaurus": {
+			"token": "RSO9YEpw4REcVVpewFCVBwupHX5NXeTmD62tDoaswkkUUwyLHt6ZWSpL2Oxw",
+			"id": 1
+		}
+	},
+	"target": "https://afbeeldingsober.nl/api/upload"
+}
