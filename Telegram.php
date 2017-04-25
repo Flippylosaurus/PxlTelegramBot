@@ -1254,6 +1254,9 @@ class Telegram {
 	public function isPhoto() {
 		if (isset($array["message"]["photo"])) {return true;} else {return false;}
     }
+    public function isReplyPhoto() {
+		if (isset($array["message"]["reply_to_message"]["photo"])) {return true;} else {return false;}
+    }
 	public function getFileID() {
         return end($this->data["message"]["photo"])["file_id"];
     }
