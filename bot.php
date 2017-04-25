@@ -38,7 +38,7 @@ if ($text == "/uploadpic" ) {
         die(); 
     }
     $reply_message = $content['reply_to_message'];
-    if(!in_array('photo', $reply_message)) {
+    if(!$telegram->isPhoto) {
         $content = array('chat_id' => $chat_id, 'text' => 'Please reply to a picture.');
         $telegram->sendMessage($content);
         die(); 
