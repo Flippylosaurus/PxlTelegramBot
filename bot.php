@@ -32,7 +32,7 @@ if ($text == "/uploadpic" ) {
         $telegram->sendMessage($content);
         die();
     }
-    if(!in_array('reply_to_message', $content['message'])) {
+    if($telegram->ReplyID) {
         $content = array('chat_id' => $chat_id, 'text' => 'Please reply to a message.');
         $telegram->sendMessage($content);
         die(); 

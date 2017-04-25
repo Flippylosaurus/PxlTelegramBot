@@ -1260,6 +1260,12 @@ class Telegram {
     public function getReplyFileID() {
         return end($this->data["message"]["reply_to_message"]["photo"])["file_id"];
     }
+    public function ReplyID() {
+    if (isset($this->data["message"]["reply_to_message"]["message_id"]) == true) {
+      return $this->data["message"]["reply_to_message"]["message_id"];
+    }
+    return null;
+  }
 	/// Get the chat_id of the current message
 	/**
 	 * \return the String users's chat_id
